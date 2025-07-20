@@ -107,6 +107,10 @@ function gamble() {
     const fakeOperator = getWeightedOperator();
     const fakeNumber = getWeightedNumber();
 
+    var clicksound = new Audio("static/sounds/click.mp3");
+    clicksound.play();
+
+
     operationDisplay.innerText = fakeOperator;
     numberDisplay.innerText = fakeNumber;
 
