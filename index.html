@@ -1,0 +1,80 @@
+<html>
+    <head>
+        <title>Gambling Simulator</title>
+        <link rel="stylesheet" type="text/css" href="static/css/styles.css">
+    </head>
+    <body>
+        <center>
+            <div class="topnav">
+                <p>Balance: $<span id="money">0</span></p>
+                <button id="timer" onclick="addMoney()">Add Funds</button>
+            </div>
+            <div id="hatContainer" style="margin-top: 20px;">
+                <img id="fancyHatImage" src="static/img/fancyhat.png" alt="" style="display: none; height: 100px;">
+                <p id="funnyMessage" style="color: #00ffcc; font-weight: bold;"></p>
+            </div>
+
+            <h1>Gambling Simulator</h1>
+            <input type="text" id="betAmount" placeholder="Enter bet amount" required>
+            <button id="betButton" onclick="gamble()">Place Bet</button>
+            <p>Operation: <span id="operationResult"></span></p>
+            <p>Number: <span id="randomNumber"></span></p>
+            <br>
+            <h2>Shop</h2>
+            <div id="shop">
+            <div class="shop-item">
+                <p>🎩 Fancy Hat - $500</p>
+                <button onclick="buyItem('Fancy Hat', 500)">Buy</button>
+            </div>
+            <div class="shop-item">
+                <p>🎲 Exploding Dice - $1000</p>
+                <button onclick="buyItem('Exploding Dice', 1000)">Buy</button>
+            </div>
+            <div class="shop-item">
+                <p>🐇 Lucky Rabbit - $3000</p>
+                <button onclick="buyItem('Lucky Rabbit', 3000)">Buy</button>
+            </div>
+            <div class="shop-item">
+                <p>💳 VIP Card - $5000</p>
+                <button onclick="buyItem('VIP Card', 5000)">Buy</button>
+            </div>
+            <div class="shop-item">
+                <p>🏆 Golden Chip - $7000</p>
+                <button onclick="buyItem('Golden Chip', 7000)">Buy</button>
+            </div>
+            <div class="shop-item">
+                <p>🎁 Mystery Box - $4000</p>
+                <button onclick="buyItem('Mystery Box', 4000)">Buy</button>
+            </div>
+            <div class="shop-item">
+                <p>🎰 High Roller - $6000</p>
+                <button onclick="buyItem('High Roller', 6000)">Buy</button>
+            </div>
+            <div class="shop-item">
+                <p>💼 Debt Collector - $3500</p>
+                <button onclick="buyItem('Debt Collector', 3500)">Buy</button>
+            </div>
+            <div class="shop-item">
+                <p>🔮 Fortune Teller - $4500</p>
+                <button onclick="buyItem('Fortune Teller', 4500)">Buy</button>
+            </div>
+            <div class="shop-item">
+                <p>📈 Stock Boost - $2000</p>
+                <button onclick="buyItem('Stock Boost', 2000)">Buy</button>
+            </div>
+            </div>
+
+
+
+                <h3>Inventory:</h3>
+                <ul id="inventory">
+                    <!-- Bought items will appear here -->
+                </ul>
+            </div>
+
+
+
+        </center>
+        <script src="static/js/node.js"></script>
+    </body>
+</html>

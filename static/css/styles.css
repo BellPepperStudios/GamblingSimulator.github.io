@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+body {
+    font-family: 'Sansation', sans-serif;
+    background: radial-gradient(circle at top, #1a1a1a, #0d0d0d);
+    color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.topnav {
+    background-color: #121212;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.6);
+}
+
+.topnav p {
+    color: #00ffcc;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.topnav button {
+    background: linear-gradient(145deg, #00c26e, #007f48);
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 15px;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.1s;
+}
+
+.topnav button:hover {
+    background: linear-gradient(145deg, #00e07f, #009957);
+    transform: scale(1.05);
+}
+
+h1 {
+    font-size: 3em;
+    margin: 30px 0 20px;
+    color: #00e6ac;
+    text-shadow: 0 0 10px #00ffc3;
+}
+
+input[type="text"], input[type="number"] {
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    margin: 10px;
+    font-size: 16px;
+    width: 200px;
+    background-color: #1e1e1e;
+    color: #00ffcc;
+    box-shadow: 0 0 5px rgba(0,255,200,0.2);
+}
+
+button#betButton {
+    background: linear-gradient(145deg, #ff6b6b, #c0392b);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.1s;
+}
+
+button#betButton:hover {
+    background: linear-gradient(145deg, #ff7e7e, #d1493a);
+    transform: scale(1.05);
+}
+
+#operationResult, #randomNumber {
+    font-size: 2em;
+    color: #ffd700;
+    margin: 10px;
+    display: inline-block;
+}
+
+#shop {
+    background-color: #1f1f1f;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 30px;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 0 15px rgba(0,255,170,0.1);
+}
+
+.shop-item {
+    background-color: #2a2a2a;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #f2f2f2;
+    transition: background 0.3s;
+}
+
+.shop-item:hover {
+    background-color: #333;
+}
+
+.shop-item button {
+    padding: 8px 15px;
+    background-color: #00c26e;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.1s;
+}
+
+.shop-item button:hover {
+    background-color: #00e688;
+    transform: scale(1.05);
+}
+
+#inventory {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 10px;
+}
+
+#inventory li {
+    margin: 5px 0;
+    background-color: #2f2f2f;
+    padding: 8px;
+    border-radius: 6px;
+    color: #00ffcc;
+    font-weight: bold;
+}
